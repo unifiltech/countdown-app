@@ -4,19 +4,25 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
     width: 100vw;
     min-height: 100vh;
-    background-color: rgb(39, 38, 38);
+}
 
+body {
+    background-color: rgb(39, 39, 39);
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-
     font-family: Arial;
 }
 
 .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
     max-width: 600px;
     padding: 1.5rem;
 }
@@ -26,11 +32,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.1rem;
 }
 
 .title {
-    color: rgb(200, 198, 198);
+    color: gray;
     font-size: 1.1rem;
     font-weight: normal;
 }
@@ -49,4 +55,6 @@ body {
     font-size: 2rem;
     font-weight: bold;
     padding: 0.2rem;
+    border-radius: 0.2rem;
+    margin-top: 0.3rem;
 }
